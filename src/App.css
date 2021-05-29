@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-family: 'Manrope', sans-serif;    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main {
+    width: 100%;
+    margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+    width: 100%;
+    padding: 2em;
+    display: block;
+    background-color: #233e8b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header_brand span {
+    font-size: 36px;
+    font-weight: 500;    
+}
+
+.header_brand a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.content {
+    padding: 32px;
+}
+
+.pokemons_list {
+    margin: 32px auto auto;
+}
+
+.pokemon_item {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transition: transform .5s ease;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.pokemon_name p {
+    padding: 20px;
+    background-color: #1eae98;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.pokemon_holder_image {
+    width: 100%;
+    padding: 20px;
+}
+
+.pokemon_image {
+    height: 40vh;
+    object-fit: contain;
 }
